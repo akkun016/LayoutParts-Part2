@@ -1,4 +1,119 @@
 @charset "UTF-8";
+.green-box {
+  height: 200px;
+  width: 200px;
+  background-color: #76ff826b;
+  margin: 0 auto;
+}
 
-/* カード内の画像は以下のURLを使用して下さい */
-/* https://picsum.photos/id/1005/200/300 */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn-box {
+  animation: fadeIn 4s;
+}
+
+.fadeOut-box {
+  animation: fadeIn 4s 4s alternate-reverse;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-box {
+  animation: rotate 4s linear infinite;
+}
+
+.blue-box {
+  height: 200px;
+  width: 200px;
+  background-color: #331aefd0;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+.hover-box:hover {
+  background-color: #ff27e2c9;
+}
+
+.hover-rotate:hover {
+  transform: rotate(360deg);
+}
+
+.move-up:hover {
+  transform: translateY(-20%);
+}
+
+.move-right:hover {
+  transform: translateX(20%);
+}
+
+.stratch-height:hover {
+  height: 300px;
+}
+
+.stratch-width:hover {
+  width: 500px;
+}
+
+.add-border:hover {
+  border: solid 10px #00ffe5;
+  box-sizing: border-box;
+}
+
+.add-shadow:hover {
+  box-shadow: 8px 11px 10px 3px #06031ed0;
+}
+
+.loading-circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: solid 10px #ecf1f2;
+  border-top: solid 10px #14ff4bcd;
+  margin: 0 auto;
+  animation: rotate 1.1s linear infinite;
+}
+
+.profile-block {
+  width: 300px;
+  padding: 20px;
+  background: #ffffff;
+  border: solid #000000;
+  border-width: 1px 0 1px 1px;
+  float: left;
+  transition: 0.6s;
+}
+
+.profile-block:last-child {
+  border-right: solid 1px #000000;
+}
+
+.profile-block:hover {
+  box-shadow: 0px 0px 10px 3px #424242d0;
+  position: relative;
+  z-index: 2;
+}
+
+.profile-image {
+  height: 150px;
+  width: 150px;
+  background: no-repeat center / cover url("https://picsum.photos/id/1005/200/300");
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
