@@ -42,6 +42,8 @@
 .click:active {
   box-shadow: none;
   transform: translateY(6px);
+  -webkit-transform: translateY(6px);
+  -ms-transform: translateY(6px);
 }
 
 .design-1 {

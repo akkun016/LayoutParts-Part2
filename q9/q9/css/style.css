@@ -26,6 +26,8 @@
 @keyframes rotate {
   100% {
     transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);  
   }
 }
 
@@ -47,14 +49,20 @@
 
 .hover-rotate:hover {
   transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
 }
 
 .move-up:hover {
   transform: translateY(-20%);
+  -webkit-transform: translateY(-20%);
+  -ms-transform: translateY(-20%);
 }
 
 .move-right:hover {
   transform: translateX(20%);
+  -webkit-transform: translateX(20%);
+  -ms-transform: translateX(20%);
 }
 
 .stratch-height:hover {
